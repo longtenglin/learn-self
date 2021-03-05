@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.learnself.mapper.EsStudentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.learnself.entity.EsStudent">
+        <id column="stu_id" property="stuId" />
+        <result column="stu_name" property="stuName" />
+        <result column="user_id" property="userId" />
+        <result column="stu_position" property="stuPosition" />
+        <result column="stu_class" property="stuClass" />
+        <result column="stu_grade" property="stuGrade" />
+        <result column="stu_school" property="stuSchool" />
+        <result column="update_time" property="updateTime" />
+        <result column="updater" property="updater" />
+        <result column="create_time" property="createTime" />
+        <result column="creator" property="creator" />
+        <result column="delete_flag" property="deleteFlag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        stu_id, stu_name, user_id, stu_position, stu_class, stu_grade, stu_school, update_time, updater, create_time, creator, delete_flag
+    </sql>
+
+</mapper>
